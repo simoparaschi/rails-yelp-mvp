@@ -37,3 +37,7 @@ padding: 16px;
 .restaurant-list {
   display: block;
 }
+
+.actions {
+  margin: 16px 0;
+}
