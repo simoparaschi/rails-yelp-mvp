@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.3.5"
 
+# Seed faker
+gem "faker"
+
 # Simple form
 gem "simple_form"
 

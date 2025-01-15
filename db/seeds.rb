@@ -7,3 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# Randomly get a category
+categories = ["chinese", "italian", "japanese", "french", "belgian"]
+
+5.times do
+  category = categories[rand(0..4)]
+  restaurant = Restaurant.new(
+    name: Faker::Restaurant.name,
+    address: Faker::Address.street_address,
+    phone_number: Faker::PhoneNumber.phone_number,
+    category: category
+  )
+  restaurant.save!
+end
